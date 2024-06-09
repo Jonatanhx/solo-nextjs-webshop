@@ -1,4 +1,4 @@
-import db from "@/lib/db";
+import db from "../../src/lib/db";
 import { upsertProducts } from "./product-seed";
 import { upsertUsers } from "./user-seed";
 

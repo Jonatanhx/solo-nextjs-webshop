@@ -12,11 +12,50 @@ model User {
   id    Int     @id @default(autoincrement())
   email String  @unique
   name  String?
+
+  order Order[]
 }
 
 model Product {
-  id          Int    @id @default(autoincrement())
+  id          Int     @id @default(autoincrement())
   name        String
   description String
   image       String
+  price       Int     @default(0)
+  inventory   Int     @default(0)
+  isArchived  Boolean @default(false)
+
+  categories   Category[]
+  OrderDetails OrderDetails[]
+}
+
+model Category {
+  id   Int    @id @default(autoincrement())
+  name String @unique
+
+  products Product[]
+}
+
+model Order {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  isSent    Boolean  @default(false)
+  userId    Int
+  total     Int
+
+  OrderDetails OrderDetails[]
+
+  User User @relation(fields: [userId], references: [id])
+}
+
+model OrderDetails {
+  orderId   Int
+  productId Int
+  quantity  Int
+  subTotal  Int
+
+  order   Order   @relation(fields: [orderId], references: [id])
+  product Product @relation(fields: [productId], references: [id])
+
+  @@id([orderId, productId])
 }

@@ -23,7 +23,7 @@ export default async function ProductGrid() {
           <CardContent className="flex justify-center">
             <Image
               src={product.image}
-              alt="Image of a product"
+              alt="Products according to category name"
               width={250}
               height={250}
               objectFit="contain"

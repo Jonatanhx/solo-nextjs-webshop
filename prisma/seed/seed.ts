@@ -1,10 +1,12 @@
 import db from "../../src/lib/db";
+import { upsertCategories } from "./category-seed";
 import { upsertProducts } from "./product-seed";
 import { upsertUsers } from "./user-seed";
 
 async function main() {
   await upsertUsers();
   await upsertProducts();
+  await upsertCategories();
 }
 
 main()

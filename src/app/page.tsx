@@ -1,9 +1,9 @@
-import ProductGrid from "@/components/ProductGrid";
+import CategoryGrid from "@/components/CategoryGrid";
 
 export default function Home() {
   return (
     <main className="p-8">
-      <ProductGrid />
+      <CategoryGrid />
     </main>
   );
 }

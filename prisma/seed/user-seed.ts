@@ -1,6 +1,6 @@
 "use server";
 
-import { db } from "../db";
+import { db } from "../../src/lib/db";
 
 export async function upsertUsers() {
   try {

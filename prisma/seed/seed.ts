@@ -1,8 +1,10 @@
-import { db } from "../db";
+import db from "@/lib/db";
+import { upsertProducts } from "./product-seed";
 import { upsertUsers } from "./user-seed";
 
 async function main() {
   await upsertUsers();
+  await upsertProducts();
 }
 
 main()

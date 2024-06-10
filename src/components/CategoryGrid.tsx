@@ -1,5 +1,5 @@
 import Image from "next/image";
-import db from "../../src/lib/db";
+import db from "../lib/db";
 import { Card, CardHeader, CardTitle } from "./ui/card";
 
 export default async function CategoryGrid() {

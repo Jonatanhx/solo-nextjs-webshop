@@ -5,11 +5,11 @@ import { Card, CardHeader, CardTitle } from "./ui/card";
 export default async function CategoryGrid() {
   const categories = await db.category.findMany({});
   return (
-    <section className=" flex flex-row">
+    <section className="flex flex-col flex-wrap">
       {categories.map((category) => (
         <Card
           key={category.id}
-          className="bg-neutral-600 text-white mx-2 max-w-100 rounded-xl border-black overflow-hidden transition ease-in-out delay-10 hover:-translate-y-1 hover:-translate-x-1 hover:ring-4 duration-300"
+          className="flex flex-col flex-grow-0 bg-neutral-600 text-white mx-2 max-w-100 rounded-xl border-black overflow-hidden transition ease-in-out delay-10 hover:-translate-y-1 hover:ring-4 duration-300"
         >
           <CardHeader className="flex items-center">
             <CardTitle>{category.name}</CardTitle>

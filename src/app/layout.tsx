@@ -9,7 +9,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-carbon flex flex-col h-screen">
+      <body className="bg-carbon flex flex-col">
         <Header />
         {children}
         <Footer />

@@ -5,7 +5,7 @@ import { Card, CardHeader, CardTitle } from "./ui/card";
 export default async function CategoryGrid() {
   const categories = await db.category.findMany({});
   return (
-    <section className="flex flex-col flex-wrap">
+    <section className="flex">
       {categories.map((category) => (
         <Card
           key={category.id}

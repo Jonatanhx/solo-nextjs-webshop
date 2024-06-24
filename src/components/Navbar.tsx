@@ -7,8 +7,10 @@ export default async function Navbar() {
   return (
     <nav className="flex flex-1 justify-center">
       {categories.map((c) => (
-        <div className="p-2 text-lg" key={c.id}>
-          <Link href={`/${c.name}`}>{c.name}</Link>
+        <div className="text-lg " key={c.id}>
+          <div className="p-2 hover:bg-gradient-to-b from-transparent to-orange-500 rounded-t-4xl">
+            <Link href={`/${c.name}`}>{c.name}</Link>
+          </div>
         </div>
       ))}
     </nav>

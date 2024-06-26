@@ -11,7 +11,7 @@ export default function LogInButton() {
   };
   return (
     <button className="p-2" onClick={handleSignIn}>
-      test
+      Log in
     </button>
   );
 }

@@ -9,5 +9,9 @@ export default function LogInButton() {
       console.error("Error signing in:", error);
     }
   };
-  return <button onClick={handleSignIn}></button>;
+  return (
+    <button className="p-2" onClick={handleSignIn}>
+      test
+    </button>
+  );
 }

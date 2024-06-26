@@ -11,7 +11,7 @@ export default async function adminbutton() {
   }); */
 
   return (
-    <div>
+    <div className="p-2">
       <Link href="/admin">
         <UserCogIcon />
       </Link>

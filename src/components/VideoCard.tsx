@@ -1,5 +1,5 @@
 "use client";
-export default function videocard() {
+export default function VideoCard() {
   return (
     <div className="flex justify-center">
       <video autoPlay loop className="w-3/5">

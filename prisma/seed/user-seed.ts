@@ -8,10 +8,12 @@ export async function upsertUsers() {
       where: { email: "jonatanhelander@hotmail.com" },
       update: {
         name: "Jonatan Helander",
+        isAdmin: true,
       },
       create: {
         email: "jonatanhelander@hotmail.com",
         name: "Jonatan Helander",
+        isAdmin: true,
       },
     });
   } catch (error) {

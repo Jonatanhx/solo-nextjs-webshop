@@ -9,7 +9,7 @@ export default async function Navbar() {
       {categories.map((c) => (
         <div className="text-lg " key={c.id}>
           <div className="p-2 hover:bg-gradient-to-b from-transparent to-orange-500 rounded-t-4xl">
-            <Link href={`/${c.name}`}>{c.name}</Link>
+            <Link href={`/Category/${c.name}`}>{c.name}</Link>
           </div>
         </div>
       ))}

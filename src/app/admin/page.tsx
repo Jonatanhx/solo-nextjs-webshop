@@ -1,7 +1,9 @@
 export default function AdminPage() {
   return (
     <main>
-      <h1 className="text-white">This is the admin page</h1>
+      <div className="bg-gradient-to-r p-4 from-orange-600 to-orange-500 mb-12 flex justify-center">
+        <p className="text-white text-2xl font-bold">Admin</p>
+      </div>
     </main>
   );
 }

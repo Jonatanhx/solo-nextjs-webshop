@@ -1,8 +1,8 @@
-import CategoryTitle from "../CategoryTitle";
+import CategoryTitle from "../components/CategoryTitle";
 
 export default function CategoryPage() {
   return (
-    <main className="p-8 flex flex-1 flex-col">
+    <main className="">
       <CategoryTitle />
     </main>
   );

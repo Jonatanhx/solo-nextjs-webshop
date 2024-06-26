@@ -11,6 +11,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-carbon flex flex-col">
         <Header />
+
         {children}
         <Footer />
       </body>
